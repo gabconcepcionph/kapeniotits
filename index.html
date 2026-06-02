@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Kape Ni Otit's | Coffee Shop in the Philippines</title>
+  <meta name="description" content="Kape Ni Otit's - Your local coffee shop serving freshly brewed coffee and delicious meals. Visit us for a cozy atmosphere and great coffee." />
+  <meta name="keywords" content="coffee shop, café, Kape Ni Otit's, Philippines coffee, fresh coffee, breakfast" />
+  <meta name="author" content="Kape Ni Otit's" />
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kape Ni Otit's | Coffee Shop" />
+  <meta property="og:description" content="Your local coffee shop serving freshly brewed coffee and delicious meals." />
+  <meta property="og:image" content="https://kapeniotits.vikaph.com/images/hero.jpg" />
+  <meta property="og:url" content="https://kapeniotits.vikaph.com" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kape Ni Otit's | Coffee Shop" />
+  <meta name="twitter:description" content="Your local coffee shop serving freshly brewed coffee and delicious meals." />
+  <meta name="twitter:image" content="https://kapeniotits.vikaph.com/images/hero.jpg" />
+  
+  <!-- Tailwind CSS v3 -->
+  <script src="https://assets.vikaph.com/tailwindcss-3.4.17.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary:   '#8B4513',
+              secondary: '#D2691E',
+              accent:    '#FFB347',
+              dark:      '#2D1810',
+              light:     '#FFF8F0',
+              muted:     '#8B7355',
+            }
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body:    ['Inter', 'sans-serif'],
+            accent:  ['Dancing Script', 'cursive'],
+          },
+          borderRadius: {
+            card:   '1rem',
+            btn:    '0.5rem',
+          },
+          boxShadow: {
+            card:   '0 4px 20px rgba(139, 69, 19, 0.1)',
+            hero:   '0 8px 40px rgba(139, 69, 19, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Brand CSS Variables -->
+  <style>
+    :root {
+      --color-primary:   #8B4513;
+      --color-secondary: #D2691E;
+      --color-accent:    #FFB347;
+      --color-dark:      #2D1810;
+      --color-light:     #FFF8F0;
+      --color-muted:     #8B7355;
+      --font-heading: 'Playfair Display', serif;
+      --font-body:    'Inter', sans-serif;
+      --font-accent:  'Dancing Script', cursive;
+      --radius-card: 1rem;
+      --radius-btn:  0.5rem;
+      --shadow-card: 0 4px 20px rgba(139, 69, 19, 0.1);
+    }
+    body { font-family: var(--font-body); }
+    h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+  </style>
+</head>
+<body class="bg-[var(--color-light)] text-[var(--color-dark)] overflow-x-hidden">
+
+  <!-- Preview Banner -->
+  <div class="fixed top-0 left-0 right-0 bg-[var(--color-dark)] text-white py-2 px-4 text-center z-50 text-sm">
+    <span class="mr-2">🚧 Preview Website</span>
+    <a href="https://www.vikaph.com/" target="_blank" class="text-[var(--color-secondary)] hover:text-[var(--color-primary)] font-semibold underline">
+      Get your website at vikaph.com
+    </a>
+  </div>
+
+  <!-- Navigation -->
+  <header class="fixed top-8 w-full z-40 bg-white/90 backdrop-blur-sm border-b border-[var(--color-muted)]/20 shadow-sm">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="font-heading text-xl font-bold text-[var(--color-primary)]">
+        Kape Ni Otit's
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#about" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">About</a>
+        <a href="#menu" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Menu</a>
+        <a href="#gallery" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Gallery</a>
+        <a href="#reviews" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Reviews</a>
+        <a href="#contact" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-[var(--radius-btn)] font-semibold hover:bg-[var(--color-secondary)] transition-colors text-sm">
+        Visit Us
+      </a>
+    </nav>
+  </header>
+
+  <main class="overflow-x-hidden">
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-end md:items-center justify-center overflow-hidden">
+      <img
+        src="images/hero.jpg"
+        alt="Kape Ni Otit's coffee shop interior with warm lighting and cozy atmosphere"
+        class="absolute inset-0 w-full h-full object-cover object-center z-0 max-w-full"
+        fetchpriority="high"
+        width="1920"
+        height="1080"
+      />
+      <div class="absolute inset-0 z-10 bg-gradient-to-top from-[var(--color-dark)]/85 via-[var(--color-dark)]/60 via-[55%] to-transparent"></div>
+      <div class="absolute inset-x-0 top-0 h-40 z-10 bg-gradient-to-bottom from-[var(--color-dark)]/50 to-transparent"></div>
+      <div class="absolute inset-0 z-15 bg-black/60"></div>
+      <div class="relative z-20 text-center text-white max-w-3xl mx-auto px-6 pt-16 pb-20 md:pb-0">
+        <p class="font-body text-sm uppercase tracking-widest text-white/70 mb-4">
+          Coffee Shop · Philippines
+        </p>
+        <h1 class="font-heading text-5xl md:text-7xl font-bold leading-tight mb-4">
+          Your Perfect Cup Awaits
+        </h1>
+        <p class="font-body text-lg text-white/80 mb-2">
+          [FILL IN ADDRESS]
+        </p>
+        <p class="font-body text-sm text-white/60 mb-8">
+          ★ [FILL IN RATING] · [FILL IN REVIEW COUNT] Google Reviews
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contact" class="bg-[var(--color-primary)] text-white px-8 py-4 rounded-[var(--radius-btn)] font-heading font-semibold hover:bg-[var(--color-secondary)] transition-colors text-lg">
+            Get Directions
+          </a>
+          <a href="#about" class="border-2 border-white/70 text-white px-8 py-4 rounded-[var(--radius-btn)] font-heading font-semibold hover:bg-white hover:text-[var(--color-dark)] transition-colors">
+            Learn More ↓
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-[var(--color-light)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <img
+            src="images/about.jpg"
+            alt="Barista preparing coffee at Kape Ni Otit's"
+            class="rounded-[var(--radius-card)] object-cover w-full h-80 md:h-full shadow-[var(--shadow-card)]"
+            width="800"
+            height="600"
+          />
+          <div>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-[var(--color-dark)] mb-6">
+              About Kape Ni Otit's
+            </h2>
+            <p class="font-body text-base text-[var(--color-muted)] leading-relaxed mb-4">
+              Welcome to Kape Ni Otit's, your neighborhood coffee shop where every cup tells a story. We're passionate about serving freshly brewed coffee made with love and care.
+            </p>
+            <p class="font-body text-base text-[var(--color-muted)] leading-relaxed mb-6">
+              Whether you're starting your day with a morning brew or winding down with an afternoon pick-me-up, our cozy atmosphere and friendly staff make every visit special.
+            </p>
+            <div class="flex gap-8 mt-6">
+              <div class="text-center">
+                <div class="font-heading text-3xl font-bold text-[var(--color-primary)]">Fresh</div>
+                <div class="font-body text-sm text-[var(--color-muted)]">Daily Brew</div>
+              </div>
+              <div class="text-center">
+                <div class="font-heading text-3xl font-bold text-[var(--color-primary)]">Cozy</div>
+                <div class="font-body text-sm text-[var(--color-muted)]">Atmosphere</div>
+              </div>
+              <div class="text-center">
+                <div class="font-heading text-3xl font-bold text-[var(--color-primary)]">Friendly</div>
+                <div class="font-body text-sm text-[var(--color-muted)]">Service</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="bg-[var(--color-dark)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
+            Our Menu
+          </h2>
+          <p class="font-body text-lg text-white/70">
+            Fresh coffee, delicious meals, and sweet treats
+          </p>
+        </div>
+        <div class="flex gap-2 mb-8 border-b border-white/30 justify-center flex-wrap">
+          <button class="border-b-2 border-[var(--color-accent)] text-[var(--color-accent)] font-semibold pb-2 px-4" onclick="showMenu('coffee')">Coffee</button>
+          <button class="text-white/70 pb-2 px-4 hover:text-[var(--color-accent)] transition-colors" onclick="showMenu('meals')">Meals</button>
+          <button class="text-white/70 pb-2 px-4 hover:text-[var(--color-accent)] transition-colors" onclick="showMenu('desserts')">Desserts</button>
+        </div>
+        <div id="menu-coffee" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Brewed Coffee</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Freshly brewed house blend</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[FILL IN PRICE]</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Espresso</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Rich and bold espresso shot</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[FILL IN PRICE]</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Cappuccino</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Espresso with steamed milk foam</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[FILL IN PRICE]</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Latte</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Smooth espresso with milk</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[ILL IN PRICE]</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Iced Coffee</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Refreshing cold brew</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[FILL IN PRICE]</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Mocha</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Chocolate espresso blend</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[FILL IN PRICE]</p>
+          </div>
+        </div>
+        <div id="menu-meals" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Breakfast Platter</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Eggs, toast, and your choice of meat</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[FILL IN PRICE]</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Sandwich</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Fresh ingredients on toasted bread</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[FILL IN PRICE]</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Pasta</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Homemade pasta with sauce</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[FILL IN PRICE]</p>
+          </div>
+        </div>
+        <div id="menu-desserts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Cake Slice</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Daily selection of cakes</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[FILL IN PRICE]</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Cookies</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Freshly baked cookies</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[FILL IN PRICE]</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-5 text-white">
+            <h3 class="font-heading font-semibold text-white">Pastries</h3>
+            <p class="font-body text-sm text-white/70 mt-1">Assorted morning pastries</p>
+            <p class="font-heading font-bold text-[var(--color-accent)] mt-3">[FILL IN PRICE]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-[var(--color-light)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-[var(--color-dark)] mb-4">
+            Our Gallery
+          </h2>
+          <p class="font-body text-lg text-[var(--color-muted)]">
+            A glimpse into our cozy coffee shop
+          </p>
+        </div>
+        <div class="columns-2 md:columns-3 gap-3">
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/01.jpg" alt="Coffee being poured" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/02.jpg" alt="Coffee shop interior" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/03.jpg" alt="Latte art" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/04.jpg" alt="Coffee beans" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/05.jpg" alt="Barista at work" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/06.jpg" alt="Coffee shop ambiance" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="bg-[var(--color-dark)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-white text-center mb-12">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">
+            What Our Customers Say
+          </h2>
+          <p class="font-body text-lg text-white/70">
+            ★ [FILL IN RATING] based on [FILL IN REVIEW COUNT] Google reviews
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-lg mb-3">★★★★★</div>
+            <blockquote class="font-body italic text-white/80 mt-3 leading-relaxed">
+              "Great coffee and cozy atmosphere. Perfect place to work or relax with friends."
+            </blockquote>
+            <cite class="font-body font-semibold text-white mt-4 block not-italic">— [Customer Name]</cite>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-lg mb-3">★★★★★</div>
+            <blockquote class="font-body italic text-white/80 mt-3 leading-relaxed">
+              "The best coffee in town! Staff is friendly and the food is delicious."
+            </blockquote>
+            <cite class="font-body font-semibold text-white mt-4 block not-italic">— [Customer Name]</cite>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-lg mb-3">★★★★★</div>
+            <blockquote class="font-body italic text-white/80 mt-3 leading-relaxed">
+              "My go-to spot for morning coffee. Always fresh and consistently good."
+            </blockquote>
+            <cite class="font-body font-semibold text-white mt-4 block not-italic">— [Customer Name]</cite>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="https://www.google.com/maps/place/Kape+Ni+Otit%E2%80%99s" target="_blank" rel="noopener" class="border border-white text-white px-6 py-3 rounded-[var(--radius-btn)] hover:bg-white hover:text-[var(--color-dark)] transition-colors">
+            Read More Reviews on Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[var(--color-light)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div class="space-y-6">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-[var(--color-dark)]">
+              Visit Us
+            </h2>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span class="font-body text-[var(--color-dark)]">[FILL IN ADDRESS]</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <a href="tel:[FILL IN PHONE]" class="font-body text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">[FILL IN PHONE]</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span class="font-body text-[var(--color-dark)]">[FILL IN HOURS]</span>
+            </div>
+            <div class="w-full">
+              <div class="flex justify-between py-2 border-b border-[var(--color-muted)]/20">
+                <span class="font-body text-[var(--color-muted)]">Monday - Friday</span>
+                <span class="font-body font-medium text-[var(--color-dark)]">[FILL IN]</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-[var(--color-muted)]/20">
+                <span class="font-body text-[var(--color-muted)]">Saturday</span>
+                <span class="font-body font-medium text-[var(--color-dark)]">[FILL IN]</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-[var(--color-muted)]/20">
+                <span class="font-body text-[var(--color-muted)]">Sunday</span>
+                <span class="font-body font-medium text-[var(--color-dark)]">[FILL IN]</span>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <a href="https://www.facebook.com/profile.php?id=61582108345481" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[var(--color-primary)] flex items-center justify-center transition-colors">
+                <svg class="w-5 h-5 text-[var(--color-dark)]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="rounded-[var(--radius-card)] overflow-hidden shadow-[var(--shadow-card)] w-full h-80 lg:h-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.123456789!2d120.8855504!3d14.4320185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33962d006cc28ffb%3A0x1383af56c3d5089d!2sKape%20Ni%20Otit%E2%80%99s!5e0!3m2!1sen!2sph!4v1234567890"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/place/Kape+Ni+Otit%E2%80%99s" target="_blank" rel="noopener" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-[var(--radius-btn)] font-semibold hover:bg-[var(--color-secondary)] transition-colors w-full text-center mt-6 inline-block">
+          Get Directions
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#2D1810] text-white py-16 px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div>
+        <h3 class="font-heading font-semibold text-white mb-4">Kape Ni Otit's</h3>
+        <p class="font-body text-sm text-white/60 mb-4">Your perfect cup awaits</p>
+        <div class="flex gap-4">
+          <a href="https://www.facebook.com/profile.php?id=61582108345481" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[var(--color-primary)] flex items-center justify-center transition-colors">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-heading font-semibold text-white mb-4">Quick Links</h3>
+        <a href="#about" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">About</a>
+        <a href="#menu" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">Menu</a>
+        <a href="#gallery" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">Gallery</a>
+        <a href="#reviews" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">Reviews</a>
+        <a href="#contact" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">Contact</a>
+      </div>
+      <div>
+        <h3 class="font-heading font-semibold text-white mb-4">Hours</h3>
+        <p class="font-body text-sm text-white/60 mb-2">Monday - Friday</p>
+        <p class="font-body text-sm text-white/40 mb-4">[FILL IN]</p>
+        <p class="font-body text-sm text-white/60 mb-2">Saturday - Sunday</p>
+        <p class="font-body text-sm text-white/40">[FILL IN]</p>
+      </div>
+      <div>
+        <h3 class="font-heading font-semibold text-white mb-4">Contact</h3>
+        <p class="font-body text-sm text-white/60 mb-2">[FILL IN ADDRESS]</p>
+        <p class="font-body text-sm text-white/60 mb-2">[FILL IN PHONE]</p>
+      </div>
+    </div>
+    <div class="border-t border-white/10 mt-12 pt-8 text-center max-w-6xl mx-auto">
+      <p class="font-body text-sm text-white/40">
+        © 2026 Kape Ni Otit's · All rights reserved
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Menu tab switching
+    function showMenu(category) {
+      const menus = ['coffee', 'meals', 'desserts'];
+      menus.forEach(menu => {
+        const element = document.getElementById('menu-' + menu);
+        if (menu === category) {
+          element.classList.remove('hidden');
+        } else {
+          element.classList.add('hidden');
+        }
+      });
+      
+      // Update button styles
+      const buttons = document.querySelectorAll('#menu button');
+      buttons.forEach((btn, index) => {
+        if (menus[index] === category) {
+          btn.classList.add('border-b-2', 'border-[var(--color-accent)]', 'text-[var(--color-accent)]', 'font-semibold');
+          btn.classList.remove('text-white/70');
+        } else {
+          btn.classList.remove('border-b-2', 'border-[var(--color-accent)]', 'text-[var(--color-accent)]', 'font-semibold');
+          btn.classList.add('text-white/70');
+        }
+      });
+    }
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+
+  <!-- LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CoffeeShop",
+    "name": "Kape Ni Otit's",
+    "image": "https://kapeniotits.vikaph.com/images/hero.jpg",
+    "url": "https://kapeniotits.vikaph.com",
+    "telephone": "[FILL IN PHONE]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[FILL IN ADDRESS]",
+      "addressLocality": "[FILL IN CITY]",
+      "addressCountry": "PH"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "[FILL IN]",
+        "closes": "[FILL IN]"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61582108345481"
+    ]
+  }
+  </script>
+
+</body>
+</html>

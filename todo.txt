@@ -1,0 +1,16 @@
+# TODO - Kape Ni Otit's
+
+## Missing Data to Fill In
+- Address: [FILL IN ADDRESS]
+- Phone: [FILL IN PHONE]
+- Hours: [FILL IN HOURS]
+- Rating: [FILL IN RATING]
+- Review Count: [FILL IN REVIEW COUNT]
+- Menu prices: [FILL IN PRICE] for all menu items
+- City: [FILL IN CITY]
+
+## Notes
+- Google Maps page is JavaScript-rendered, could not extract business details
+- Facebook page blocked, could not extract additional info
+- Used placeholder data for missing fields
+- Images downloaded from Unsplash as fallback
